@@ -1,0 +1,276 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#2b3033"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginTop="45dp"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY"
+            android:src="@drawable/avatar_background" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="94dp"
+            android:layout_height="94dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="45dp"
+            android:layout_marginTop="45dp"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY" >
+        </ImageView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#212528" >
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#3b4145" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btnBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/icon_browser" >
+            </ImageView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtBrowser"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|center"
+                android:singleLine="true"
+                android:textColor="#767d82"
+                android:textSize="12sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btnVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/icon_video" >
+            </ImageView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtVideo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|center"
+                android:singleLine="true"
+                android:textColor="#767d82"
+                android:textSize="12sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btnNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/icon_news" >
+            </ImageView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtNews"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|center"
+                android:singleLine="true"
+                android:textColor="#767d82"
+                android:textSize="12sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription" >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btnXurjun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/icon_xurjun" >
+            </ImageView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtXurjun"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|center"
+                android:singleLine="true"
+                android:textColor="#767d82"
+                android:textSize="12sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btnXatire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/icon_note" >
+            </ImageView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtXatire"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|center"
+                android:singleLine="true"
+                android:textColor="#767d82"
+                android:textSize="12sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#2b3033"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/home_bottom_shape"
+            android:gravity="center|center" >
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="#212528"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#f16522"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:textColor="#212528"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

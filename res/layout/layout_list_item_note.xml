@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/style_note_list_item"
+    android:gravity="center|center"
+    android:minHeight="60dp"
+    android:orientation="vertical" >
+
+    <com.jezire.widget.UyghurTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right|center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+
+</LinearLayout>

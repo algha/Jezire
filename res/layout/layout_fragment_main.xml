@@ -1,0 +1,3368 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfcfcf"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#afc936" >
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </com.jezire.widget.UyghurTextView>
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#96b40b" >
+        </View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fefefe"
+        android:gravity="center|center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_loading_big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFailure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fefefe"
+        android:gravity="center|center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_browser" />
+
+        <com.jezire.widget.UyghurTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center|center"
+            android:text="@string/network_failure"
+            android:textColor="#777777"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/btnRetry"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#f26c4f"
+            android:gravity="center|center"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.UyghurTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|center"
+                android:text="@string/retry"
+                android:textColor="#fefefe"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab1Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#ebebeb"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textColor="#979797"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab1Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textColor="#afc936"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab1Page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/topxurjun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/not_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:orientation="vertical" >
+
+                            <com.jezire.widget.UyghurTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center|center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center|center"
+                                android:text="@string/NotLogin"
+                                android:textColor="#979797"
+                                android:textSize="12sp" >
+                            </com.jezire.widget.UyghurTextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:orientation="horizontal"
+                            android:paddingTop="10dp" >
+
+                            <com.jezire.widget.UyghurTextView
+                                android:id="@+id/ILogin"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center|bottom"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="#6dcff6"
+                                android:gravity="center|center"
+                                android:text="@string/ILogin"
+                                android:textColor="#fff" >
+                            </com.jezire.widget.UyghurTextView>
+
+                            <com.jezire.widget.UyghurTextView
+                                android:id="@+id/IRegister"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center|bottom"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="#fdc689"
+                                android:gravity="center|center"
+                                android:text="@string/IRegister"
+                                android:textColor="#fff" >
+                            </com.jezire.widget.UyghurTextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_xurjun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp" >
+
+                        <com.jezire.algha.XurjunGirdView
+                            android:id="@+id/GirdView"
+                            android:rotationY="180"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:columnWidth="90dp"
+                            android:gravity="right|center"
+                            android:horizontalSpacing="5dp"
+                            android:numColumns="3"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp" >
+                        </com.jezire.algha.XurjunGirdView>
+                        
+                        <com.jezire.widget.UyghurTextView
+                                android:id="@+id/XurjunEmpty"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center|center"
+                                android:background="@null"
+                                android:gravity="center|center"
+                                android:text="@string/XurjunEmpty"
+                                android:visibility="gone"
+                                android:textSize="14sp"
+                                android:textColor="#000" >
+                            </com.jezire.widget.UyghurTextView>
+                        
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/top_links"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp" >
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row1Link3"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row1Icon3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row1Link2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row1Icon2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row1Link1"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row1Icon1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center"
+                        android:orientation="horizontal" >
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row2Link3"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row2Icon3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row2Link2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row2Icon2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row2Link1"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row2Icon1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center|center"
+                        android:orientation="horizontal" >
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row3Link3"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row3Icon3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row3Link2"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row3Icon2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#ebebeb" >
+                        </View>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab1Page1Row3Link1"
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="3dp"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <ImageView
+                            android:id="@+id/tab1Page1Row3Icon1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="fitXY" >
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/imgAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#ff8666"
+                    android:contentDescription="@string/contentDescription"
+                    android:scaleType="fitXY" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab2Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab2Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab2Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2Page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/tab2YengiXewerlerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="centerCrop" >
+                    </ImageView>
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2YengiXewerlerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#80000000"
+                        android:gravity="center|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page1Link1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page1Link2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page1Link3"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page1Link4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page1Link5"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2Page2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/tab2XeliqaraXewerlerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="centerCrop" >
+                    </ImageView>
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2XeliqaraXewerlerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#80000000"
+                        android:gravity="center|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page2Link1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page2Link2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page2Link3"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page2Link4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page2Link5"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2Page3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/tab2MemliketXewerlerImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="centerCrop" >
+                    </ImageView>
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2MemliketXewerlerTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#80000000"
+                        android:gravity="center|center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page3Link1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page3Link2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page3Link3"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page3Link4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab2Page3Link5"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTeximuKopXewerlerParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center|center"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.IconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:text="\ue01d"
+                    android:textColor="#cfcfcf"
+                    android:textSize="18sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/btnTeximuKopXewerler"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.IconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:text="\ue00d"
+                    android:textColor="#00bff3"
+                    android:textSize="18sp" >
+                </com.jezire.widget.IconView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab3Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab3Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab3Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3Page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image6"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image5"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page1Image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page1Name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3Page2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image6"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image5"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page2Image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page2Name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3Page3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image6"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image5"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab3Page3Image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab3Page3Name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTeximuKopFilimlerParent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center|center"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.IconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:text="\ue01d"
+                    android:textColor="#cfcfcf"
+                    android:textSize="18sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/btnTeximuKopFilimler"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.IconView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:text="\ue00c"
+                    android:textColor="#00bff3"
+                    android:textSize="18sp" >
+                </com.jezire.widget.IconView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab4Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab4Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab4Page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page1Link1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page1Link2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page1Link3"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page1Link4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page1Link5"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab4Page2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page2Link1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page2Link2"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page2Link3"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page2Link4"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/style_news_list_line" >
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal" >
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/tab4Page2Link5"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="right|center"
+                        android:paddingLeft="30dp"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="12sp" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="36dp"
+                        android:gravity="center|center"
+                        android:singleLine="true"
+                        android:text="·"
+                        android:textColor="#afc936"
+                        android:textSize="25sp" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ebebeb"
+                android:orientation="horizontal" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab5Btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab5Btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/tab5Btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center"
+                    android:singleLine="true"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab5Page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name4"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size4"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name3"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size3"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name2"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name1"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name8"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size8"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name7"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size7"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name6"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size6"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page1Image5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page1Name5"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page1Size5"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab5Page2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name4"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size4"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name3"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size3"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name2"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name1"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name8"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size8"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name7"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size7"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name6"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size6"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page2Image5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page2Name5"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page2Size5"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab5Page3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name4"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size4"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name3"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size3"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name2"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size2"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name1"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size1"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name8"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size8"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name7"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size7"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name6"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size6"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/tab5Page3Image5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:contentDescription="@string/contentDescription"
+                            android:scaleType="centerCrop" >
+                        </ImageView>
+
+                        <com.jezire.widget.UyghurTextView
+                            android:id="@+id/tab5Page3Name5"
+                            android:layout_width="60dp"
+                            android:layout_height="24dp"
+                            android:gravity="bottom|center"
+                            android:singleLine="true"
+                            android:textColor="#666666"
+                            android:textSize="12sp" >
+                        </com.jezire.widget.UyghurTextView>
+
+                        <TextView
+                            android:id="@+id/tab5Page3Size5"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|center"
+                            android:singleLine="true"
+                            android:textColor="#999999"
+                            android:textSize="12sp" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center|center"
+                android:orientation="vertical" >
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/txtFooter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="#666666"
+                    android:textSize="12sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <TextView
+                    android:id="@+id/txtFooter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center|center"
+                    android:padding="2dp"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textSize="12sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

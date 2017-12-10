@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="list_item_background">#ffffff</color>
+    <color name="list_item_background_pressed">#f3f3f3</color>
+    <color name="list_item_background_note">#383838</color>
+    <color name="list_item_background_note_pressed">#383838</color>
+ 
+
+</resources>

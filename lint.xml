@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility" severity="ignore">
+        <ignore path="src/com/jezire/activity/ActivityLogin.java" />
+        <ignore path="src/com/jezire/activity/ActivityNews.java" />
+    </issue>
+    <issue id="DrawAllocation">
+        <ignore path="src/com/algha/MyEditText.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/jezire/activity/ActivityLogin.java" />
+        <ignore path="src/com/jezire/activity/ActivityTeklipPikir.java" />
+    </issue>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/jezire/activity/ActivityNews.java" />
+    </issue>
+</lint>

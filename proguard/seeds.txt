@@ -1,0 +1,603 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentActivity: FragmentActivity()
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager
+android.support.v4.view.ViewPager: ViewPager(android.content.Context)
+android.support.v4.view.ViewPager: ViewPager(android.content.Context,android.util.AttributeSet)
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: int getClientWidth()
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout: void setScrimColor(int)
+android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
+android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout$SavedState
+android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
+android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
+android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getSliderFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setCoveredFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout$SavedState
+android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+com.jezire.App
+com.jezire.App: App()
+com.jezire.R$anim: int animation_in_down
+com.jezire.R$anim: int animation_in_fade
+com.jezire.R$anim: int animation_in_up
+com.jezire.R$anim: int animation_out_down
+com.jezire.R$anim: int animation_out_fade
+com.jezire.R$anim: int animation_out_up
+com.jezire.R$anim: int animation_rotate
+com.jezire.R$attr: int edgeSlide
+com.jezire.R$attr: int edgeSlideWidth
+com.jezire.R$attr: int interpolator
+com.jezire.R$attr: int layout_role
+com.jezire.R$attr: int primaryShadowDrawable
+com.jezire.R$attr: int primaryShadowWidth
+com.jezire.R$attr: int secondaryShadowDrawable
+com.jezire.R$attr: int secondaryShadowWidth
+com.jezire.R$attr: int slideDirection
+com.jezire.R$attr: int slideMenuStyle
+com.jezire.R$color: int list_item_background
+com.jezire.R$color: int list_item_background_note
+com.jezire.R$color: int list_item_background_note_pressed
+com.jezire.R$color: int list_item_background_pressed
+com.jezire.R$drawable: int avatar_background
+com.jezire.R$drawable: int avatar_background_border
+com.jezire.R$drawable: int ic_launcher
+com.jezire.R$drawable: int icon_browser
+com.jezire.R$drawable: int icon_loading_big
+com.jezire.R$drawable: int icon_loading_small
+com.jezire.R$drawable: int icon_news
+com.jezire.R$drawable: int icon_note
+com.jezire.R$drawable: int icon_scrollbar_thumb
+com.jezire.R$drawable: int icon_video
+com.jezire.R$drawable: int icon_xurjun
+com.jezire.R$drawable: int image_splash
+com.jezire.R$drawable: int link_icon_normal
+com.jezire.R$drawable: int link_icon_top
+com.jezire.R$drawable: int menu_left_logo
+com.jezire.R$drawable: int style_news_list_item
+com.jezire.R$drawable: int style_news_list_line
+com.jezire.R$drawable: int style_note_list_item
+com.jezire.R$drawable: int style_seekbar
+com.jezire.R$drawable: int wechat_share_icon
+com.jezire.R$drawable: int xlistview_arrow
+com.jezire.R$id: int avatar
+com.jezire.R$id: int backgroundColor1
+com.jezire.R$id: int backgroundColor2
+com.jezire.R$id: int browserControlLayout
+com.jezire.R$id: int btnAdd
+com.jezire.R$id: int btnBackward
+com.jezire.R$id: int btnBrowser
+com.jezire.R$id: int btnClose
+com.jezire.R$id: int btnDelete
+com.jezire.R$id: int btnFontBig
+com.jezire.R$id: int btnFontColor1
+com.jezire.R$id: int btnFontColor2
+com.jezire.R$id: int btnFontColor3
+com.jezire.R$id: int btnFontColor4
+com.jezire.R$id: int btnFontColor5
+com.jezire.R$id: int btnFontColor6
+com.jezire.R$id: int btnFontSmall
+com.jezire.R$id: int btnForward
+com.jezire.R$id: int btnInfo
+com.jezire.R$id: int btnMenu
+com.jezire.R$id: int btnNews
+com.jezire.R$id: int btnNext
+com.jezire.R$id: int btnPlayPause
+com.jezire.R$id: int btnPrev
+com.jezire.R$id: int btnQisim
+com.jezire.R$id: int btnRefreshOrStop
+com.jezire.R$id: int btnRetry
+com.jezire.R$id: int btnRight1
+com.jezire.R$id: int btnRight2
+com.jezire.R$id: int btnSave
+com.jezire.R$id: int btnSetting
+com.jezire.R$id: int btnShare
+com.jezire.R$id: int btnShareToQQ
+com.jezire.R$id: int btnShareToQzone
+com.jezire.R$id: int btnShareToTimeline
+com.jezire.R$id: int btnShareToWechat
+com.jezire.R$id: int btnTabControl
+com.jezire.R$id: int btnTeximuKopFilimler
+com.jezire.R$id: int btnTeximuKopFilimlerParent
+com.jezire.R$id: int btnTeximuKopXewerler
+com.jezire.R$id: int btnTeximuKopXewerlerParent
+com.jezire.R$id: int btnTheme
+com.jezire.R$id: int btnUser
+com.jezire.R$id: int btnVideo
+com.jezire.R$id: int btnXatire
+com.jezire.R$id: int buttonList
+com.jezire.R$id: int buttonList1
+com.jezire.R$id: int content
+com.jezire.R$id: int controlLine
+com.jezire.R$id: int horizontalScrollView
+com.jezire.R$id: int iconDelta
+com.jezire.R$id: int iconTime
+com.jezire.R$id: int imageView
+com.jezire.R$id: int imgAd
+com.jezire.R$id: int imgIcon
+com.jezire.R$id: int imgImage
+com.jezire.R$id: int imgImageTop
+com.jezire.R$id: int imgLoading
+com.jezire.R$id: int layoutControl
+com.jezire.R$id: int layoutFailure
+com.jezire.R$id: int layoutList
+com.jezire.R$id: int layoutLoading
+com.jezire.R$id: int left
+com.jezire.R$id: int leftBorder
+com.jezire.R$id: int lineView
+com.jezire.R$id: int lineView1
+com.jezire.R$id: int lineView2
+com.jezire.R$id: int lineViewHolder
+com.jezire.R$id: int linkRow1
+com.jezire.R$id: int linkRow2
+com.jezire.R$id: int linkRow3
+com.jezire.R$id: int listView
+com.jezire.R$id: int menuButtonList
+com.jezire.R$id: int newsContentControlLayout
+com.jezire.R$id: int noteControlLayout
+com.jezire.R$id: int noteControlLayoutLine
+com.jezire.R$id: int primaryMenu
+com.jezire.R$id: int progressBar
+com.jezire.R$id: int right
+com.jezire.R$id: int scrollView
+com.jezire.R$id: int secondaryMenu
+com.jezire.R$id: int seekBar
+com.jezire.R$id: int shareParent
+com.jezire.R$id: int surfaceView
+com.jezire.R$id: int tab1Btn1
+com.jezire.R$id: int tab1Page1
+com.jezire.R$id: int tab1Page1Row1Icon1
+com.jezire.R$id: int tab1Page1Row1Icon2
+com.jezire.R$id: int tab1Page1Row1Icon3
+com.jezire.R$id: int tab1Page1Row1Link1
+com.jezire.R$id: int tab1Page1Row1Link2
+com.jezire.R$id: int tab1Page1Row1Link3
+com.jezire.R$id: int tab1Page1Row2Icon1
+com.jezire.R$id: int tab1Page1Row2Icon2
+com.jezire.R$id: int tab1Page1Row2Icon3
+com.jezire.R$id: int tab1Page1Row2Link1
+com.jezire.R$id: int tab1Page1Row2Link2
+com.jezire.R$id: int tab1Page1Row2Link3
+com.jezire.R$id: int tab1Page1Row3Icon1
+com.jezire.R$id: int tab1Page1Row3Icon2
+com.jezire.R$id: int tab1Page1Row3Icon3
+com.jezire.R$id: int tab1Page1Row3Link1
+com.jezire.R$id: int tab1Page1Row3Link2
+com.jezire.R$id: int tab1Page1Row3Link3
+com.jezire.R$id: int tab2Btn1
+com.jezire.R$id: int tab2Btn2
+com.jezire.R$id: int tab2Btn3
+com.jezire.R$id: int tab2MemliketXewerlerImage
+com.jezire.R$id: int tab2MemliketXewerlerTitle
+com.jezire.R$id: int tab2Page1
+com.jezire.R$id: int tab2Page1Link1
+com.jezire.R$id: int tab2Page1Link2
+com.jezire.R$id: int tab2Page1Link3
+com.jezire.R$id: int tab2Page1Link4
+com.jezire.R$id: int tab2Page1Link5
+com.jezire.R$id: int tab2Page2
+com.jezire.R$id: int tab2Page2Link1
+com.jezire.R$id: int tab2Page2Link2
+com.jezire.R$id: int tab2Page2Link3
+com.jezire.R$id: int tab2Page2Link4
+com.jezire.R$id: int tab2Page2Link5
+com.jezire.R$id: int tab2Page3
+com.jezire.R$id: int tab2Page3Link1
+com.jezire.R$id: int tab2Page3Link2
+com.jezire.R$id: int tab2Page3Link3
+com.jezire.R$id: int tab2Page3Link4
+com.jezire.R$id: int tab2Page3Link5
+com.jezire.R$id: int tab2XeliqaraXewerlerImage
+com.jezire.R$id: int tab2XeliqaraXewerlerTitle
+com.jezire.R$id: int tab2YengiXewerlerImage
+com.jezire.R$id: int tab2YengiXewerlerTitle
+com.jezire.R$id: int tab3Btn1
+com.jezire.R$id: int tab3Btn2
+com.jezire.R$id: int tab3Btn3
+com.jezire.R$id: int tab3Page1
+com.jezire.R$id: int tab3Page1Image1
+com.jezire.R$id: int tab3Page1Image2
+com.jezire.R$id: int tab3Page1Image3
+com.jezire.R$id: int tab3Page1Image4
+com.jezire.R$id: int tab3Page1Image5
+com.jezire.R$id: int tab3Page1Image6
+com.jezire.R$id: int tab3Page1Name1
+com.jezire.R$id: int tab3Page1Name2
+com.jezire.R$id: int tab3Page1Name3
+com.jezire.R$id: int tab3Page1Name4
+com.jezire.R$id: int tab3Page1Name5
+com.jezire.R$id: int tab3Page1Name6
+com.jezire.R$id: int tab3Page2
+com.jezire.R$id: int tab3Page2Image1
+com.jezire.R$id: int tab3Page2Image2
+com.jezire.R$id: int tab3Page2Image3
+com.jezire.R$id: int tab3Page2Image4
+com.jezire.R$id: int tab3Page2Image5
+com.jezire.R$id: int tab3Page2Image6
+com.jezire.R$id: int tab3Page2Name1
+com.jezire.R$id: int tab3Page2Name2
+com.jezire.R$id: int tab3Page2Name3
+com.jezire.R$id: int tab3Page2Name4
+com.jezire.R$id: int tab3Page2Name5
+com.jezire.R$id: int tab3Page2Name6
+com.jezire.R$id: int tab3Page3
+com.jezire.R$id: int tab3Page3Image1
+com.jezire.R$id: int tab3Page3Image2
+com.jezire.R$id: int tab3Page3Image3
+com.jezire.R$id: int tab3Page3Image4
+com.jezire.R$id: int tab3Page3Image5
+com.jezire.R$id: int tab3Page3Image6
+com.jezire.R$id: int tab3Page3Name1
+com.jezire.R$id: int tab3Page3Name2
+com.jezire.R$id: int tab3Page3Name3
+com.jezire.R$id: int tab3Page3Name4
+com.jezire.R$id: int tab3Page3Name5
+com.jezire.R$id: int tab3Page3Name6
+com.jezire.R$id: int tab4Btn1
+com.jezire.R$id: int tab4Btn2
+com.jezire.R$id: int tab4Page1
+com.jezire.R$id: int tab4Page1Link1
+com.jezire.R$id: int tab4Page1Link2
+com.jezire.R$id: int tab4Page1Link3
+com.jezire.R$id: int tab4Page1Link4
+com.jezire.R$id: int tab4Page1Link5
+com.jezire.R$id: int tab4Page2
+com.jezire.R$id: int tab4Page2Link1
+com.jezire.R$id: int tab4Page2Link2
+com.jezire.R$id: int tab4Page2Link3
+com.jezire.R$id: int tab4Page2Link4
+com.jezire.R$id: int tab4Page2Link5
+com.jezire.R$id: int tab5Btn1
+com.jezire.R$id: int tab5Btn2
+com.jezire.R$id: int tab5Btn3
+com.jezire.R$id: int tab5Page1
+com.jezire.R$id: int tab5Page1Image1
+com.jezire.R$id: int tab5Page1Image2
+com.jezire.R$id: int tab5Page1Image3
+com.jezire.R$id: int tab5Page1Image4
+com.jezire.R$id: int tab5Page1Image5
+com.jezire.R$id: int tab5Page1Image6
+com.jezire.R$id: int tab5Page1Image7
+com.jezire.R$id: int tab5Page1Image8
+com.jezire.R$id: int tab5Page1Name1
+com.jezire.R$id: int tab5Page1Name2
+com.jezire.R$id: int tab5Page1Name3
+com.jezire.R$id: int tab5Page1Name4
+com.jezire.R$id: int tab5Page1Name5
+com.jezire.R$id: int tab5Page1Name6
+com.jezire.R$id: int tab5Page1Name7
+com.jezire.R$id: int tab5Page1Name8
+com.jezire.R$id: int tab5Page1Size1
+com.jezire.R$id: int tab5Page1Size2
+com.jezire.R$id: int tab5Page1Size3
+com.jezire.R$id: int tab5Page1Size4
+com.jezire.R$id: int tab5Page1Size5
+com.jezire.R$id: int tab5Page1Size6
+com.jezire.R$id: int tab5Page1Size7
+com.jezire.R$id: int tab5Page1Size8
+com.jezire.R$id: int tab5Page2
+com.jezire.R$id: int tab5Page2Image1
+com.jezire.R$id: int tab5Page2Image2
+com.jezire.R$id: int tab5Page2Image3
+com.jezire.R$id: int tab5Page2Image4
+com.jezire.R$id: int tab5Page2Image5
+com.jezire.R$id: int tab5Page2Image6
+com.jezire.R$id: int tab5Page2Image7
+com.jezire.R$id: int tab5Page2Image8
+com.jezire.R$id: int tab5Page2Name1
+com.jezire.R$id: int tab5Page2Name2
+com.jezire.R$id: int tab5Page2Name3
+com.jezire.R$id: int tab5Page2Name4
+com.jezire.R$id: int tab5Page2Name5
+com.jezire.R$id: int tab5Page2Name6
+com.jezire.R$id: int tab5Page2Name7
+com.jezire.R$id: int tab5Page2Name8
+com.jezire.R$id: int tab5Page2Size1
+com.jezire.R$id: int tab5Page2Size2
+com.jezire.R$id: int tab5Page2Size3
+com.jezire.R$id: int tab5Page2Size4
+com.jezire.R$id: int tab5Page2Size5
+com.jezire.R$id: int tab5Page2Size6
+com.jezire.R$id: int tab5Page2Size7
+com.jezire.R$id: int tab5Page2Size8
+com.jezire.R$id: int tab5Page3
+com.jezire.R$id: int tab5Page3Image1
+com.jezire.R$id: int tab5Page3Image2
+com.jezire.R$id: int tab5Page3Image3
+com.jezire.R$id: int tab5Page3Image4
+com.jezire.R$id: int tab5Page3Image5
+com.jezire.R$id: int tab5Page3Image6
+com.jezire.R$id: int tab5Page3Image7
+com.jezire.R$id: int tab5Page3Image8
+com.jezire.R$id: int tab5Page3Name1
+com.jezire.R$id: int tab5Page3Name2
+com.jezire.R$id: int tab5Page3Name3
+com.jezire.R$id: int tab5Page3Name4
+com.jezire.R$id: int tab5Page3Name5
+com.jezire.R$id: int tab5Page3Name6
+com.jezire.R$id: int tab5Page3Name7
+com.jezire.R$id: int tab5Page3Name8
+com.jezire.R$id: int tab5Page3Size1
+com.jezire.R$id: int tab5Page3Size2
+com.jezire.R$id: int tab5Page3Size3
+com.jezire.R$id: int tab5Page3Size4
+com.jezire.R$id: int tab5Page3Size5
+com.jezire.R$id: int tab5Page3Size6
+com.jezire.R$id: int tab5Page3Size7
+com.jezire.R$id: int tab5Page3Size8
+com.jezire.R$id: int tabInfo
+com.jezire.R$id: int tabNewsCategory
+com.jezire.R$id: int tabQisim
+com.jezire.R$id: int titleBar
+com.jezire.R$id: int titleLine
+com.jezire.R$id: int txtBackgroundColor
+com.jezire.R$id: int txtBrowser
+com.jezire.R$id: int txtCategory
+com.jezire.R$id: int txtCurrentTime
+com.jezire.R$id: int txtFontColor
+com.jezire.R$id: int txtFontSize
+com.jezire.R$id: int txtFontSizeName
+com.jezire.R$id: int txtFooter1
+com.jezire.R$id: int txtFooter2
+com.jezire.R$id: int txtHint
+com.jezire.R$id: int txtInfo
+com.jezire.R$id: int txtLang
+com.jezire.R$id: int txtMessage
+com.jezire.R$id: int txtName
+com.jezire.R$id: int txtNews
+com.jezire.R$id: int txtRegion
+com.jezire.R$id: int txtSetting
+com.jezire.R$id: int txtText
+com.jezire.R$id: int txtTextTitle
+com.jezire.R$id: int txtTime
+com.jezire.R$id: int txtTip
+com.jezire.R$id: int txtTitle
+com.jezire.R$id: int txtTotalTime
+com.jezire.R$id: int txtUrl
+com.jezire.R$id: int txtVersion
+com.jezire.R$id: int txtVideo
+com.jezire.R$id: int txtXatire
+com.jezire.R$id: int viewPager
+com.jezire.R$id: int webView
+com.jezire.R$id: int xlistview_footer_content
+com.jezire.R$id: int xlistview_footer_hint_textview
+com.jezire.R$id: int xlistview_footer_progressbar
+com.jezire.R$id: int xlistview_header_arrow
+com.jezire.R$id: int xlistview_header_content
+com.jezire.R$id: int xlistview_header_hint_textview
+com.jezire.R$id: int xlistview_header_progressbar
+com.jezire.R$id: int xlistview_header_text
+com.jezire.R$id: int xlistview_header_time
+com.jezire.R$layout: int layout_activity_browser
+com.jezire.R$layout: int layout_activity_news
+com.jezire.R$layout: int layout_activity_news_content
+com.jezire.R$layout: int layout_activity_splash
+com.jezire.R$layout: int layout_activity_video_info
+com.jezire.R$layout: int layout_activity_video_player
+com.jezire.R$layout: int layout_activity_wxentry
+com.jezire.R$layout: int layout_dialog_loading
+com.jezire.R$layout: int layout_dialog_networkfailure
+com.jezire.R$layout: int layout_fragment_link
+com.jezire.R$layout: int layout_fragment_main
+com.jezire.R$layout: int layout_fragment_menu_left
+com.jezire.R$layout: int layout_fragment_menu_right
+com.jezire.R$layout: int layout_fragment_note
+com.jezire.R$layout: int layout_fragment_note_left
+com.jezire.R$layout: int layout_fragment_note_right
+com.jezire.R$layout: int layout_fragment_video
+com.jezire.R$layout: int layout_fragment_video_right
+com.jezire.R$layout: int layout_list_item_news
+com.jezire.R$layout: int layout_list_item_news_top
+com.jezire.R$layout: int layout_list_item_note
+com.jezire.R$layout: int layout_message_exit
+com.jezire.R$layout: int layout_page_news
+com.jezire.R$layout: int layout_widget_link_button
+com.jezire.R$layout: int layout_widget_menu_button
+com.jezire.R$layout: int layout_widget_popup_share
+com.jezire.R$layout: int layout_widget_tab_button
+com.jezire.R$layout: int xlistview_footer
+com.jezire.R$layout: int xlistview_header
+com.jezire.R$string: int app_name
+com.jezire.R$string: int contentDescription
+com.jezire.R$string: int loading
+com.jezire.R$string: int network_failure
+com.jezire.R$string: int retry
+com.jezire.R$string: int xlistview_footer_hint_normal
+com.jezire.R$string: int xlistview_footer_hint_ready
+com.jezire.R$string: int xlistview_header_hint_loading
+com.jezire.R$string: int xlistview_header_hint_normal
+com.jezire.R$string: int xlistview_header_hint_ready
+com.jezire.R$string: int xlistview_header_last_time
+com.jezire.R$style: int AnimationPopup
+com.jezire.R$style: int AppBaseTheme
+com.jezire.R$style: int AppTheme
+com.jezire.R$styleable: int[] SlideMenu
+com.jezire.R$styleable: int SlideMenu_edgeSlide
+com.jezire.R$styleable: int SlideMenu_edgeSlideWidth
+com.jezire.R$styleable: int SlideMenu_interpolator
+com.jezire.R$styleable: int SlideMenu_primaryShadowDrawable
+com.jezire.R$styleable: int SlideMenu_primaryShadowWidth
+com.jezire.R$styleable: int SlideMenu_secondaryShadowDrawable
+com.jezire.R$styleable: int SlideMenu_secondaryShadowWidth
+com.jezire.R$styleable: int SlideMenu_slideDirection
+com.jezire.R$styleable: int[] SlideMenu_Layout
+com.jezire.R$styleable: int SlideMenu_Layout_layout_role
+com.jezire.activity.ActivityBrowser
+com.jezire.activity.ActivityBrowser: ActivityBrowser()
+com.jezire.activity.ActivityMain
+com.jezire.activity.ActivityMain: ActivityMain()
+com.jezire.activity.ActivityNews
+com.jezire.activity.ActivityNews: ActivityNews()
+com.jezire.activity.ActivityNewsContent
+com.jezire.activity.ActivityNewsContent: ActivityNewsContent()
+com.jezire.activity.ActivityNote
+com.jezire.activity.ActivityNote: ActivityNote()
+com.jezire.activity.ActivitySplash
+com.jezire.activity.ActivitySplash: ActivitySplash()
+com.jezire.activity.ActivityVideo
+com.jezire.activity.ActivityVideo: ActivityVideo()
+com.jezire.activity.ActivityVideoInfo
+com.jezire.activity.ActivityVideoInfo: ActivityVideoInfo()
+com.jezire.activity.ActivityVideoPlayer
+com.jezire.activity.ActivityVideoPlayer: ActivityVideoPlayer()
+com.jezire.fragment.FragmentLink
+com.jezire.fragment.FragmentLink: FragmentLink()
+com.jezire.fragment.FragmentMain
+com.jezire.fragment.FragmentMain: FragmentMain()
+com.jezire.fragment.FragmentMenuLeft
+com.jezire.fragment.FragmentMenuLeft: FragmentMenuLeft()
+com.jezire.fragment.FragmentMenuRight
+com.jezire.fragment.FragmentMenuRight: FragmentMenuRight()
+com.jezire.fragment.FragmentNote
+com.jezire.fragment.FragmentNote: FragmentNote()
+com.jezire.fragment.FragmentNoteLeft
+com.jezire.fragment.FragmentNoteLeft: FragmentNoteLeft()
+com.jezire.fragment.FragmentNoteRight
+com.jezire.fragment.FragmentNoteRight: FragmentNoteRight()
+com.jezire.fragment.FragmentVideo
+com.jezire.fragment.FragmentVideo: FragmentVideo()
+com.jezire.fragment.FragmentVideoRight
+com.jezire.fragment.FragmentVideoRight: FragmentVideoRight()
+com.jezire.slidemenu.SlideMenu: void setInterpolator(android.view.animation.Interpolator)
+com.jezire.slidemenu.SlideMenu: android.view.animation.Interpolator getInterpolator()
+com.jezire.slidemenu.SlideMenu: void setPrimaryShadowDrawable(android.graphics.drawable.Drawable)
+com.jezire.slidemenu.SlideMenu: android.graphics.drawable.Drawable getPrimaryShadowDrawable()
+com.jezire.slidemenu.SlideMenu: android.graphics.drawable.Drawable getSecondaryShadowDrawable()
+com.jezire.slidemenu.SlideMenu: void setSecondaryShadowDrawable(android.graphics.drawable.Drawable)
+com.jezire.slidemenu.SlideMenu: int getSlideMode()
+com.jezire.slidemenu.SlideMenu: void setSlideMode(int)
+com.jezire.slidemenu.SlideMenu: void setEdgeSlideEnable(boolean)
+com.jezire.slidemenu.SlideMenu: void setEdgetSlideWidth(int)
+com.jezire.slidemenu.SlideMenu: float getEdgeSlideWidth()
+com.jezire.slidemenu.SlideMenu: int getSlideDirection()
+com.jezire.slidemenu.SlideMenu: void setSlideDirection(int)
+com.jezire.slidemenu.SlideMenu: com.jezire.slidemenu.SlideMenu$OnSlideStateChangeListener getOnSlideStateChangeListener()
+com.jezire.slidemenu.SlideMenu: void setOnSlideStateChangeListener(com.jezire.slidemenu.SlideMenu$OnSlideStateChangeListener)
+com.jezire.slidemenu.SlideMenu: void setOnContentTapListener(com.jezire.slidemenu.SlideMenu$OnContentTapListener)
+com.jezire.slidemenu.SlideMenu: com.jezire.slidemenu.SlideMenu$OnContentTapListener getOnContentTapListener()
+com.jezire.slidemenu.SlideMenu: int getCurrentState()
+com.jezire.slidemenu.SlideMenu: void setCurrentState(int)
+com.jezire.slidemenu.SlideMenu: android.view.View getPrimaryMenu()
+com.jezire.slidemenu.SlideMenu: android.view.View getSecondaryMenu()
+com.jezire.slidemenu.SlideMenu: void setCurrentOffset(int)
+com.jezire.slidemenu.SlideMenu: float getPrimaryShadowWidth()
+com.jezire.slidemenu.SlideMenu: void setPrimaryShadowWidth(float)
+com.jezire.slidemenu.SlideMenu: float getSecondaryShadowWidth()
+com.jezire.slidemenu.SlideMenu: void setSecondaryShadowWidth(float)
+com.jezire.slidemenu.SlideMenu$SavedState
+com.jezire.slidemenu.SlideMenu$SavedState: android.os.Parcelable$Creator CREATOR
+com.jezire.universalimageloader.FailReason$FailType: com.jezire.universalimageloader.FailReason$FailType[] values()
+com.jezire.universalimageloader.FailReason$FailType: com.jezire.universalimageloader.FailReason$FailType valueOf(java.lang.String)
+com.jezire.universalimageloader.ImageDownloader$Scheme: com.jezire.universalimageloader.ImageDownloader$Scheme[] values()
+com.jezire.universalimageloader.ImageDownloader$Scheme: com.jezire.universalimageloader.ImageDownloader$Scheme valueOf(java.lang.String)
+com.jezire.universalimageloader.ImageScaleType: com.jezire.universalimageloader.ImageScaleType[] values()
+com.jezire.universalimageloader.ImageScaleType: com.jezire.universalimageloader.ImageScaleType valueOf(java.lang.String)
+com.jezire.universalimageloader.LoadedFrom: com.jezire.universalimageloader.LoadedFrom[] values()
+com.jezire.universalimageloader.LoadedFrom: com.jezire.universalimageloader.LoadedFrom valueOf(java.lang.String)
+com.jezire.universalimageloader.QueueProcessingType: com.jezire.universalimageloader.QueueProcessingType[] values()
+com.jezire.universalimageloader.QueueProcessingType: com.jezire.universalimageloader.QueueProcessingType valueOf(java.lang.String)
+com.jezire.universalimageloader.ViewScaleType: com.jezire.universalimageloader.ViewScaleType[] values()
+com.jezire.universalimageloader.ViewScaleType: com.jezire.universalimageloader.ViewScaleType valueOf(java.lang.String)
+com.jezire.widget.FlatProgressBar
+com.jezire.widget.FlatProgressBar: FlatProgressBar(android.content.Context)
+com.jezire.widget.FlatProgressBar: FlatProgressBar(android.content.Context,android.util.AttributeSet)
+com.jezire.widget.FlatProgressBar: FlatProgressBar(android.content.Context,android.util.AttributeSet,int)
+com.jezire.widget.FlatProgressBar: void setPrimaryColor(int)
+com.jezire.widget.FlatProgressBar: void setSecondaryColor(int)
+com.jezire.widget.FlatProgressBar: void setProgress(int)
+com.jezire.widget.IconView
+com.jezire.widget.IconView: IconView(android.content.Context)
+com.jezire.widget.IconView: IconView(android.content.Context,android.util.AttributeSet)
+com.jezire.widget.IconView: IconView(android.content.Context,android.util.AttributeSet,int)
+com.jezire.widget.LinedEditText
+com.jezire.widget.LinedEditText: LinedEditText(android.content.Context)
+com.jezire.widget.LinedEditText: LinedEditText(android.content.Context,android.util.AttributeSet)
+com.jezire.widget.LinedEditText: LinedEditText(android.content.Context,android.util.AttributeSet,int)
+com.jezire.widget.LinedEditText: void setHorizontalLineEnabled(boolean)
+com.jezire.widget.LinkButton: void setText(java.lang.String)
+com.jezire.widget.LinkButton: void setButtonStyle(boolean)
+com.jezire.widget.LinkButton: void setLeftBorder(boolean)
+com.jezire.widget.MenuButton: void setText(java.lang.String)
+com.jezire.widget.MenuButton: java.lang.String getText()
+com.jezire.widget.MenuButton: void setButtonClick(boolean)
+com.jezire.widget.MenuButtonList
+com.jezire.widget.MenuButtonList: MenuButtonList(android.content.Context)
+com.jezire.widget.MenuButtonList: MenuButtonList(android.content.Context,android.util.AttributeSet)
+com.jezire.widget.MenuButtonList: MenuButtonList(android.content.Context,android.util.AttributeSet,int)
+com.jezire.widget.MenuButtonList: void setOnMenuButtonClickListener(com.jezire.widget.MenuButtonList$OnMenuButtonClickListener)
+com.jezire.widget.ScrollableWebView: void setOnScrollChangeListener(com.jezire.widget.ScrollableWebView$OnScrollChangeListener)
+com.jezire.widget.TabButton: void setText(java.lang.String)
+com.jezire.widget.TabButton: void setChecked(boolean)
+com.jezire.widget.UyghurTextView
+com.jezire.widget.UyghurTextView: UyghurTextView(android.content.Context)
+com.jezire.widget.UyghurTextView: UyghurTextView(android.content.Context,android.util.AttributeSet)
+com.jezire.widget.UyghurTextView: UyghurTextView(android.content.Context,android.util.AttributeSet,int)
+com.jezire.widget.UyghurTextView: void setText(java.lang.String)
+com.jezire.wxapi.WXEntryActivity
+com.jezire.wxapi.WXEntryActivity: WXEntryActivity()
+com.jezire.xlistview.XListView
+com.jezire.xlistview.XListView: XListView(android.content.Context)
+com.jezire.xlistview.XListView: XListView(android.content.Context,android.util.AttributeSet)
+com.jezire.xlistview.XListView: XListView(android.content.Context,android.util.AttributeSet,int)
+com.jezire.xlistview.XListView: void setAdapter(android.widget.ListAdapter)
+com.jezire.xlistview.XListView: void setPullRefreshEnable(boolean)
+com.jezire.xlistview.XListView: void setPullLoadEnable(boolean)
+com.jezire.xlistview.XListView: void setRefreshTime(java.lang.String)
+com.jezire.xlistview.XListView: void setOnScrollListener(android.widget.AbsListView$OnScrollListener)
+com.jezire.xlistview.XListView: void setXListViewListener(com.jezire.xlistview.XListView$IXListViewListener)
+com.jezire.xlistview.XListViewFooter: void setState(int)
+com.jezire.xlistview.XListViewFooter: void setBottomMargin(int)
+com.jezire.xlistview.XListViewFooter: int getBottomMargin()
+com.jezire.xlistview.XListViewHeader: void setState(int)
+com.jezire.xlistview.XListViewHeader: void setVisiableHeight(int)
+com.jezire.xlistview.XListViewHeader: int getVisiableHeight()

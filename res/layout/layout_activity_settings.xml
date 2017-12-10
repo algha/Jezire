@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfcfcf"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#afc936" >
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </com.jezire.widget.UyghurTextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#96b40b" >
+        </View>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/SettingsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <!-- سىيرىلما ئۇچۇر قوبۇل قىلىش -->
+
+            <RelativeLayout
+                android:id="@+id/siyrilmauqur"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/SIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue094"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <LinearLayout
+                    android:id="@+id/MIcon"
+                    android:layout_width="43dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="12.5dp"
+                    android:background="@drawable/siyrilma_uchur"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:textColor="#999999" >
+
+                    <View
+                        android:id="@+id/SiyrilmaImage"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/siyrilma_uchur_image" >
+                    </View>
+                </LinearLayout>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/txtsiyrilma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/SIcon"
+                    android:layout_toRightOf="@+id/MIcon"
+                    android:gravity="center|right"
+                    android:text="@string/SettingsSiyrilma"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+
+            <!-- ئېكران يورۇقلىقى -->
+
+            <RelativeLayout
+                android:id="@+id/ScreenBrightness"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/CSIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue01a"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/CMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/CSIcon"
+                    android:layout_toRightOf="@+id/CMIcon"
+                    android:gravity="center|right"
+                    android:text="@string/ScreenBright"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+
+            <!-- غەملەك تازىلاش -->
+
+            <RelativeLayout
+                android:id="@+id/ClearGhemlek"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/GSIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue054"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/GMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <TextView
+                    android:id="@+id/CacheSize"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/GMIcon"
+                    android:gravity="left|center" />
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/GSIcon"
+                    android:layout_toRightOf="@+id/CacheSize"
+                    android:gravity="center|right"
+                    android:text="@string/CacheClear"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+
+            <!-- قىستۇرمىلار -->
+
+            <!-- <RelativeLayout
+                android:id="@+id/Qisturmilar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/QSIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue02d"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/QMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/plugin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/QSIcon"
+                    android:layout_toRightOf="@+id/QMIcon"
+                    android:gravity="center|right"
+                    android:text="@string/PluginSetting"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout> -->
+
+            <!-- تەكلىپ پىكىر بېرىش -->
+
+            <RelativeLayout
+                android:id="@+id/teklippost"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/TSIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue07d"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/TMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/teklip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/TSIcon"
+                    android:layout_toRightOf="@+id/TMIcon"
+                    android:gravity="center|right"
+                    android:text="@string/Suggest"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+
+            <!-- يېڭى نەشىر -->
+
+            <RelativeLayout
+                android:id="@+id/NewVersion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/VSIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue098"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/VMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/VSIcon"
+                    android:layout_toRightOf="@+id/VMIcon"
+                    android:gravity="center|right"
+                    android:text="@string/Version"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+
+            <!-- ئەپ ھەققىدە -->
+
+            <RelativeLayout
+                android:id="@+id/AppHeqqide"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff" >
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/ASIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center|center"
+                    android:text="\ue08b"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.IconView
+                    android:id="@+id/AMIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|center"
+                    android:text="\ue01e"
+                    android:textColor="#999999"
+                    android:textSize="24sp" >
+                </com.jezire.widget.IconView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/AboutVer"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/AMIcon"
+                    android:gravity="center|bottom"
+                    android:text="2.0"
+                    android:textColor="#999999"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+
+                <com.jezire.widget.UyghurTextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@+id/ASIcon"
+                    android:layout_toRightOf="@+id/AboutVer"
+                    android:gravity="center|right"
+                    android:text="@string/AppAbout"
+                    android:textColor="#333333"
+                    android:textSize="14sp" >
+                </com.jezire.widget.UyghurTextView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

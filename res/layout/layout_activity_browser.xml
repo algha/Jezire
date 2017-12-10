@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#e1e1e1"
+        android:orientation="horizontal" >
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#666666"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/txtUrl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center|left"
+                android:imeOptions="actionGo"
+                android:inputType="textUri"
+                android:paddingLeft="5dp"
+                android:paddingRight="30dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="16sp" >
+            </EditText>
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnRefreshOrStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:textColor="#cfcfcf"
+                android:textSize="22sp" >
+            </com.jezire.widget.IconView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/txtHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:textColor="#cfcfcf"
+                android:textSize="14sp" >
+            </com.jezire.widget.UyghurTextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.jezire.widget.FlatProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" >
+    </com.jezire.widget.FlatProgressBar>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" >
+    </WebView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e1e1e1" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/browserControlLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnBackward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:textColor="#666666"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:textColor="#666666"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/xurjunParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.IconView
+                android:id="@+id/xurjunSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:textColor="#666666"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|center"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.IconView
+                android:id="@+id/btnForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:textColor="#666666"
+                android:textSize="28sp" >
+            </com.jezire.widget.IconView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

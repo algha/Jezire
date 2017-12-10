@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center|center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#d3d3d3"
+        android:minHeight="100dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="#fff"
+            android:paddingBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="20dp" >
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:max="100"
+                android:maxHeight="4.0dip"
+                android:minHeight="4.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal" >
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/qaldurush"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="3.5dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center|center"
+                android:text="@string/qaldurush"
+                android:textColor="#999999"
+                android:textSize="14sp" >
+            </com.jezire.widget.UyghurTextView>
+
+            <com.jezire.widget.UyghurTextView
+                android:id="@+id/muqumlash"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="3.5dp"
+                android:layout_weight="1"
+                android:background="#afc936"
+                android:gravity="center|center"
+                android:text="@string/muqumlash"
+                android:textColor="#ffffff"
+                android:textSize="14sp" >
+            </com.jezire.widget.UyghurTextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

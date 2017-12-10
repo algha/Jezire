@@ -1,0 +1,57 @@
+<resources>
+
+    <string name="app_name">Jezire</string>
+    <string name="retry">قايتا سىناي</string>
+    <string name="contentDescription"></string>
+    <string name="network_failure">مۇلازىمېتىردىن ئۇچۇرغا ئېرىشىش مەغلۇپ بولدى! تور مۇھىتىڭىزنى تەكشۈرۈڭ</string>
+    <string name="loading">سەل تەخىر قىلىڭ</string>
+    <string name="xlistview_header_hint_normal">تۆۋەنگە سىيرىسىڭىز يېڭىلىنىدۇ</string>
+    <string name="xlistview_header_hint_ready">قويۇپ بەرسىڭىز يېڭىلىنىدۇ</string>
+    <string name="xlistview_header_hint_loading">يېڭىلىنىۋاتىدۇ…</string>
+    <string name="xlistview_header_last_time">ئالدىنقى قېتىم يېڭىلانغان ۋاقىت: </string>
+    <string name="xlistview_footer_hint_normal">تېخىمۇ كۆپ</string>
+    <string name="xlistview_footer_hint_ready">قويۇپ بەرسىڭىز قوشۇلىدۇ</string>
+ 
+    <string name="SettingsSiyrilma">سىيرىلما ئۇچۇر قوبۇل قىلىش</string>
+    <string name="ScreenBright">ئېكران يورۇقلىقى</string>
+    <string name="CacheClear">غەملەك تازىلاش</string>
+    <string name="PluginSetting">قىستۇرما تەڭشىكى</string>
+    <string name="Suggest">تەكلىپ - پىكىر</string>
+    <string name="Version">يېڭى نەشىرىنى تەكشۈرۈش</string>
+    <string name="AppAbout">ئەپ ھەققىدە</string>
+    
+    <string name="IRegister">تىزىملىتىمەن</string>
+    <string name="IForgot">ئۇنۇتتۇم</string>
+    <string name="ILogin">كىرىمەن</string>
+    <string name="XurjunEmpty">خۇرجۇنىڭىز قۇرۇق ئىكەن.</string>
+    
+    <string name="NotLogin">تېخى كىرمەپسىز ، ئاۋال كىرىپ ئاندىن مەشخۇلات قىلىڭ !</string>
+    
+    <string name="SameMe">مېنى ئەستە ساقلا</string>
+    <string name="AutomaticLogin">ئاپتوماتىك كىرسۇن</string>
+    
+    
+    <string name="yollax">يوللاش</string>
+    <string name="muqumlash">مۇقۇملاش</string>
+    <string name="qaldurush">قالدۇرۇش</string>
+    
+    <string name="qollanchi_kilishimi">قوللانچى كىلىشىمى</string>
+    
+    <string name="jezire_ulinish_tor_bekiti">جەزىرە ئۇلىنىش تور بېكىتى</string>
+    <string name="copyright"> © 2014 JEZIRE.CN</string>
+    <string name="CurrentVersion">نۆۋەتتىكى نەشىرى : V1.0</string>
+    <string name="Jezire">جەزىرە</string>
+    
+    
+    <string name="PutName"> ئىسمىڭىزنى يېزىڭ </string>
+    <string name="PutContent">مەزمۇنىنى يېزىڭ </string>
+    <string name="PutContact">تېلېفون  / ئې-خەت / QQ</string>
+    
+    <string name="PutLinkName">ئۇلانما نامىنى كىرگۈزۈڭ</string>
+    <string name="PutLinkAdress">ئۇلانما ئادرىسىنى كىرگۈزۈڭ</string>
+    
+    <string name="edit">تەھرىرلەش</string>
+    <string name="delete">ئۆچۈرۈش</string>
+    
+    
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#cfcfcf"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_loading_big"
+        android:id="@+id/imgLoading"
+        android:layout_gravity="center|center"
+        android:contentDescription="@string/contentDescription"/>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center"
+    android:background="#cfcfcf">
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:minHeight="45dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        
+     <com.jezire.widget.IconView
+        android:id="@+id/MoreImage"
+        android:background="#069"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+   		android:gravity="center|center"
+   		android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+      </com.jezire.widget.IconView>
+
+    
+     <com.jezire.widget.IconView
+        android:id="@+id/SettingsIcon"
+        android:background="#000"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:textColor="#999999"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp">
+    </com.jezire.widget.IconView>
+	
+      <com.jezire.widget.UyghurTextView
+        android:id="@+id/SettingsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center"
+        android:layout_toRightOf="@id/MoreImage"
+        android:layout_toLeftOf="@+id/SettingsIcon"
+        android:background="#f00"
+        ></com.jezire.widget.UyghurTextView>
+      
+    </RelativeLayout>
+
+</LinearLayout>

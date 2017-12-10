@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layoutControl"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/txtCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@id/txtTotalTime"
+            android:layout_toRightOf="@id/txtCurrentTime"
+            android:max="0"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="0"
+            android:progressDrawable="@drawable/style_seekbar"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/icon_scrollbar_thumb"
+            android:thumbOffset="0dp" />
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="20dp"
+            android:text="\ue017"
+            android:textColor="#ffffff"
+            android:textSize="48sp" />
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@id/btnPlayPause"
+            android:text="\ue00e"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@id/btnPlayPause"
+            android:text="\ue00f"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="\ue021"
+            android:textColor="#ffffff"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutControl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/contentDescription"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_loading_big"
+        android:visibility="gone" />
+
+</RelativeLayout>

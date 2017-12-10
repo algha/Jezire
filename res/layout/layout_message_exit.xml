@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#80000000"
+    android:gravity="center|center"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="6dp" >
+
+    <com.jezire.widget.UyghurTextView
+        android:id="@+id/txtTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center"
+        android:singleLine="false"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

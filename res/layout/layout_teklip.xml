@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#afc936" >
+
+        <com.jezire.widget.IconView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffffff"
+            android:textSize="28sp" >
+        </com.jezire.widget.IconView>
+
+        <com.jezire.widget.UyghurTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Suggest"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </com.jezire.widget.UyghurTextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#96b40b" >
+        </View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cfcfcf"
+        android:orientation="vertical" >
+
+        <com.jezire.algha.MyEditText
+            android:id="@+id/txtName"
+            android:hint="@string/PutName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:gravity="right|center"
+            android:padding="5dp" />
+
+        <com.jezire.algha.MyEditText
+            android:id="@+id/txtContact"
+            android:textSize="14sp"
+            android:hint="@string/PutContact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:gravity="right|center"
+            android:padding="5dp" />
+
+        <com.jezire.algha.MyEditText
+            android:id="@+id/txtContent"
+            android:textSize="14sp"
+            android:hint="@string/PutContent"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff"
+            android:gravity="right|top"
+            android:padding="5dp" />
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/Post"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#afc936"
+            android:gravity="center|center"
+            android:text="@string/yollax"
+            android:textColor="#ffffff"
+            android:textSize="20sp" >
+        </com.jezire.widget.UyghurTextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#cfcfcf"
+    android:gravity="center|center"
+    android:minHeight="80dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/style_news_list_item"
+        android:minHeight="80dp" >
+
+        <ImageView
+            android:id="@+id/imgImage"
+            android:layout_width="84dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/imgImage"
+            android:gravity="top|right"
+            android:maxLines="2"
+            android:textColor="#575757"
+            android:textSize="12sp" />
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+
+        <com.jezire.widget.IconView
+            android:id="@+id/iconTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/txtTime"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

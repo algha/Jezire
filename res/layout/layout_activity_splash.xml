@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#83a100"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#83a100"
+        android:contentDescription="@string/contentDescription"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_splash" />
+
+    <com.jezire.widget.UyghurTextView
+        android:id="@+id/txtVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center|center"
+        android:text="V2.0.0"
+        android:textColor="#d8e890"
+        android:textSize="14sp" />
+
+    <com.jezire.widget.UyghurTextView
+        android:id="@+id/txtTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtVersion"
+        android:layout_marginBottom="6dp"
+        android:gravity="center|center"
+        android:singleLine="false"
+        android:textColor="#d8e890"
+        android:textSize="14sp" />
+
+</RelativeLayout>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b3033"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:focusableInTouchMode="@null"
+        android:overScrollMode="never"
+        android:scrollbarFadeDuration="0"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ScrollSubView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <!-- پارول قايتۇرۇش بېتى -->
+
+            <LinearLayout
+                android:id="@+id/Register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right|center"
+                    android:orientation="vertical" >
+
+                    <com.jezire.widget.IconView
+                        android:id="@+id/btnRegisterBack"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:gravity="center|center"
+                        android:text="\ue010"
+                        android:textColor="#747b80"
+                        android:textSize="28sp" >
+                    </com.jezire.widget.IconView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- كىرىش بېتى -->
+
+            <LinearLayout
+                android:id="@+id/login_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <com.jezire.widget.IconView
+                        android:id="@+id/btnClose"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:gravity="center|center"
+                        android:text="\ue082"
+                        android:textColor="#747b80"
+                        android:textSize="28sp" >
+                    </com.jezire.widget.IconView>
+                </LinearLayout>
+
+                <!-- ئەزا رەسىمى -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+
+                    <ImageView
+                        android:layout_width="107dp"
+                        android:layout_height="107dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_background" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/loginLoading"
+                        android:layout_width="107dp"
+                        android:layout_height="107dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_background_border"
+                        android:visibility="gone" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="94dp"
+                        android:layout_height="94dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="fitXY" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical" >
+
+                    <!-- كىرىش تېكىست رامكىلىرى -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#272b2e"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/AccountIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center|center"
+                                android:text="\ue005"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/AccountIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/LoginAccount"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/AccountIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="none"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:background="#272b2e"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/PasswordIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center|center"
+                                android:text="\ue08c"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/PasswordIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/LoginPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/PasswordIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="textPassword"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <!-- كىرىش ئۇچۇرلىرىنى ساقلاش ۋە ئاپتوماتىك كىرىش تاللانمىسى -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:baselineAligned="false" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:orientation="horizontal" >
+
+                            <com.jezire.widget.UyghurTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center"
+                                android:text="@string/AutomaticLogin"
+                                android:textColor="#767d82"
+                                android:textSize="12sp" >
+                            </com.jezire.widget.UyghurTextView>
+
+                            <CheckBox
+                                android:id="@+id/automaticLogin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#767d82"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right|center"
+                            android:orientation="horizontal" >
+
+                            <com.jezire.widget.UyghurTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center"
+                                android:text="@string/SameMe"
+                                android:textColor="#767d82"
+                                android:textSize="12sp" >
+                            </com.jezire.widget.UyghurTextView>
+
+                            <CheckBox
+                                android:id="@+id/saveMe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#767d82"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- كىرىش كونۇپكىسى -->
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/LoginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#afc936"
+                        android:gravity="center|center"
+                        android:text="@string/ILogin"
+                        android:textColor="#fff" >
+                    </com.jezire.widget.UyghurTextView>
+
+                    <!-- تىزىملىتىش ۋە پارول قايتۇرۇش كونۇپكىسى -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/GoRegister"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="0.5dp"
+                            android:layout_weight="1"
+                            android:background="#33393c"
+                            android:orientation="horizontal" >
+
+                            <com.jezire.widget.IconView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:gravity="center|center"
+                                android:text="\ue07a"
+                                android:textColor="#767d82"
+                                android:textSize="20sp" >
+                            </com.jezire.widget.IconView>
+
+                            <com.jezire.widget.UyghurTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:gravity="center|center"
+                                android:text="@string/IForgot"
+                                android:textColor="#767d82"
+                                android:textSize="14sp" >
+                            </com.jezire.widget.UyghurTextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/GoForgot"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="0.5dp"
+                            android:layout_weight="1"
+                            android:background="#33393c" >
+
+                            <com.jezire.widget.UyghurTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.6"
+                                android:gravity="center|center"
+                                android:text="@string/IRegister"
+                                android:textColor="#767d82"
+                                android:textSize="14sp" >
+                            </com.jezire.widget.UyghurTextView>
+
+                            <com.jezire.widget.IconView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.4"
+                                android:gravity="center|center"
+                                android:text="\ue079"
+                                android:textColor="#767d82"
+                                android:textSize="20sp" >
+                            </com.jezire.widget.IconView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- تۈگىدى -->
+                </LinearLayout>
+            </LinearLayout>
+            <!-- تىزىملىتىش بېتى -->
+
+            <LinearLayout
+                android:id="@+id/GetPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:orientation="vertical" >
+
+                    <com.jezire.widget.IconView
+                        android:id="@+id/btnForgetBack"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:gravity="center|center"
+                        android:text="\ue006"
+                        android:textColor="#747b80"
+                        android:textSize="28sp" >
+                    </com.jezire.widget.IconView>
+                </LinearLayout>
+
+                <!-- ئەزا رەسىمى -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+
+                    <ImageView
+                        android:layout_width="107dp"
+                        android:layout_height="107dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_background" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/registerLoading"
+                        android:layout_width="107dp"
+                        android:layout_height="107dp"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_background_border"
+                        android:visibility="gone" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/Registeravatar"
+                        android:layout_width="94dp"
+                        android:layout_height="94dp"
+                        android:background="@drawable/user_image_shape"
+                        android:showAsAction="never"
+                        android:cropToPadding="true"
+                        
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/contentDescription"
+                        android:scaleType="center" >
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical" >
+
+                    <!-- كىرىش تېكىست رامكىلىرى -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#272b2e"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/RegisterAccountIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center|center"
+                                android:text="\ue005"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/RegisterAccountIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/RegisterAccount"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/RegisterAccountIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="none"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:background="#272b2e"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/RegisterPasswordIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center|center"
+                                android:text="\ue08c"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/RegisterPasswordIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/RegisterPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/RegisterPasswordIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="textPassword"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:background="#272b2e"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/RegisterRePasswordIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center|center"
+                                android:text="\ue08c"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/RegisterRePasswordIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/RegisterRePassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/RegisterRePasswordIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="textPassword"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="47.5dp"
+                            android:background="#272b2e"
+                            android:gravity="right|center" >
+
+                            <com.jezire.widget.IconView
+                                android:id="@+id/RegisterEmailIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center|center"
+                                android:text="\ue086"
+                                android:textColor="#747b80"
+                                android:textSize="24sp" >
+                            </com.jezire.widget.IconView>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/RegisterEmailIcon"
+                                android:background="#373c40" />
+
+                            <com.jezire.algha.MyEditText
+                                android:id="@+id/RegisterEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/RegisterEmailIcon"
+                                android:background="@drawable/edit_text_selector"
+                                android:inputType="textEmailAddress"
+                                android:textColor="#767d82" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!-- كىرىش كونۇپكىسى -->
+
+                    <com.jezire.widget.UyghurTextView
+                        android:id="@+id/RegisterButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#afc936"
+                        android:gravity="center|center"
+                        android:text="@string/IRegister"
+                        android:textColor="#fff" >
+                    </com.jezire.widget.UyghurTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

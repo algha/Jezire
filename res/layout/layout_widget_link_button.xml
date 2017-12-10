@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|center"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/leftBorder"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ebebeb" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="right|center"
+        android:orientation="horizontal" >
+
+        <com.jezire.widget.UyghurTextView
+            android:id="@+id/txtText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center|center"
+            android:singleLine="true"
+            android:textSize="10sp" >
+        </com.jezire.widget.UyghurTextView>
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/contentDescription"
+            android:scaleType="fitXY" >
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>
